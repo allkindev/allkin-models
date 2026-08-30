@@ -95,9 +95,20 @@ node scripts/catalogue.mjs --check  # vérifie les modèles + que le catalogue e
 Voir [CONTRIBUTING.md](CONTRIBUTING.md). En résumé : un dossier sous `modeles/`, les deux
 fichiers, `node scripts/catalogue.mjs`, une pull request.
 
-Tu peux aussi partir d'un agent qui tourne déjà chez toi : sur sa page dans Allkin,
-**Exporter comme modèle** produit une archive `.zip` au format de ce dépôt — sans tes
-conversations ni tes données.
+## Installer un modèle sans passer par la galerie
+
+Allkin sait aussi importer une **archive `.zip`** — pratique pour un modèle qu'on garde
+pour soi, ou qu'on s'échange sans passer par une pull request. L'archive contient les deux
+fichiers, à sa racine ou dans un dossier unique :
+
+```
+mon-modele.zip
+└── mon-modele/
+    ├── modele.json
+    └── CLAUDE.md
+```
+
+Depuis Allkin : `+` → **Importer un modèle**.
 
 ## Licence
 
