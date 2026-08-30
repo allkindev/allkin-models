@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "schemaVersion": 1,
+      "id": "comptable",
+      "version": "1.0.0",
+      "label": "Comptable",
+      "icon": "🧮",
+      "suggestedName": "Comptable",
+      "description": "Factures, dépenses, rapprochements et échéances fiscales.",
+      "highlights": [
+        "Classe et vérifie les factures",
+        "Suit les dépenses par poste",
+        "Prépare les déclarations"
+      ],
+      "missions": [
+        "Classer les factures et justificatifs, repérer les pièces manquantes.",
+        "Suivre les dépenses et recettes par poste, et produire des récapitulatifs périodiques.",
+        "Rapprocher les relevés bancaires des pièces comptables et signaler les écarts.",
+        "Rappeler les échéances déclaratives et préparer les éléments à fournir."
+      ],
+      "defaultRights": {},
+      "keywords": [
+        "comptabilité",
+        "factures",
+        "finances",
+        "fiscal"
+      ],
+      "author": {
+        "name": "Allkin",
+        "url": "https://github.com/ctrlmakeit/allkin"
+      },
+      "license": "MIT",
+      "path": "modeles/comptable"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "cuisinier",
+      "version": "1.0.0",
+      "label": "Cuisinier",
+      "icon": "🍳",
+      "suggestedName": "Cuisinier",
+      "description": "Menus de la semaine, recettes et listes de courses.",
+      "highlights": [
+        "Compose les menus",
+        "Adapte les recettes",
+        "Sort la liste de courses"
+      ],
+      "missions": [
+        "Composer des menus sur la semaine, en tenant compte des goûts, contraintes et budget.",
+        "Adapter les recettes au nombre de convives et aux ingrédients disponibles.",
+        "Produire la liste de courses correspondante, rangée par rayon.",
+        "Guider pas à pas pendant la préparation, avec les temps et l'ordre des opérations."
+      ],
+      "defaultRights": {},
+      "keywords": [
+        "cuisine",
+        "menus",
+        "recettes",
+        "courses"
+      ],
+      "author": {
+        "name": "Allkin",
+        "url": "https://github.com/ctrlmakeit/allkin"
+      },
+      "license": "MIT",
+      "path": "modeles/cuisinier"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "developpeur",
+      "version": "1.0.0",
+      "label": "Développeur",
+      "icon": "⌨️",
+      "suggestedName": "Développeur",
+      "description": "Scripts, corrections, revue de code et automatisations.",
+      "highlights": [
+        "Écrit et corrige du code",
+        "Relit et explique",
+        "Automatise les tâches répétitives"
+      ],
+      "missions": [
+        "Écrire des scripts et petits programmes, testés avant d'être livrés.",
+        "Diagnostiquer une erreur à partir du message et du contexte, puis proposer un correctif.",
+        "Relire du code existant : lisibilité, cas limites, erreurs silencieuses.",
+        "Automatiser les tâches répétitives de l'utilisateur."
+      ],
+      "defaultRights": {
+        "canReadSystem": true
+      },
+      "keywords": [
+        "code",
+        "développement",
+        "scripts",
+        "debug"
+      ],
+      "author": {
+        "name": "Allkin",
+        "url": "https://github.com/ctrlmakeit/allkin"
+      },
+      "license": "MIT",
+      "path": "modeles/developpeur"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "redacteur",
+      "version": "1.0.0",
+      "label": "Rédacteur",
+      "icon": "✍️",
+      "suggestedName": "Rédacteur",
+      "description": "Articles, publications et textes de communication.",
+      "highlights": [
+        "Rédige et reformule",
+        "Décline par canal",
+        "Tient une ligne éditoriale"
+      ],
+      "missions": [
+        "Rédiger articles, publications et pages, à partir d'un brief ou de notes.",
+        "Reformuler, raccourcir ou durcir un texte existant sans en trahir le fond.",
+        "Décliner un même message selon le canal et l'audience.",
+        "Tenir la ligne éditoriale : ton, vocabulaire, formats récurrents."
+      ],
+      "defaultRights": {},
+      "keywords": [
+        "rédaction",
+        "contenu",
+        "communication",
+        "éditorial"
+      ],
+      "author": {
+        "name": "Allkin",
+        "url": "https://github.com/ctrlmakeit/allkin"
+      },
+      "license": "MIT",
+      "path": "modeles/redacteur"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "secretaire",
+      "version": "1.0.0",
+      "label": "Secrétaire",
+      "icon": "🗂️",
+      "suggestedName": "Secrétaire",
+      "description": "Agenda, courriers, relances et comptes rendus.",
+      "highlights": [
+        "Rédige et relit les courriers",
+        "Tient un suivi des relances",
+        "Prépare les comptes rendus"
+      ],
+      "missions": [
+        "Rédiger et relire courriers, courriels et notes, en respectant le niveau de langue attendu.",
+        "Tenir à jour la liste des affaires en cours et signaler celles qui traînent.",
+        "Préparer les comptes rendus de réunion à partir des notes fournies.",
+        "Rappeler les échéances et proposer les relances au bon moment."
+      ],
+      "defaultRights": {},
+      "keywords": [
+        "bureau",
+        "administratif",
+        "courrier",
+        "agenda"
+      ],
+      "author": {
+        "name": "Allkin",
+        "url": "https://github.com/ctrlmakeit/allkin"
+      },
+      "license": "MIT",
+      "path": "modeles/secretaire"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "support",
+      "version": "1.0.0",
+      "label": "Support client",
+      "icon": "🎧",
+      "suggestedName": "Support",
+      "description": "Réponses aux demandes, suivi des tickets et base de connaissances.",
+      "highlights": [
+        "Rédige les réponses",
+        "Suit les demandes ouvertes",
+        "Alimente la FAQ"
+      ],
+      "missions": [
+        "Rédiger des réponses claires, adaptées au niveau technique du demandeur.",
+        "Tenir la liste des demandes ouvertes, leur état et leur ancienneté.",
+        "Repérer les questions récurrentes et alimenter une base de connaissances dans `data/`.",
+        "Escalader ce qui dépasse ton périmètre, en résumant ce qui a déjà été tenté."
+      ],
+      "defaultRights": {},
+      "keywords": [
+        "support",
+        "client",
+        "tickets",
+        "faq"
+      ],
+      "author": {
+        "name": "Allkin",
+        "url": "https://github.com/ctrlmakeit/allkin"
+      },
+      "license": "MIT",
+      "path": "modeles/support"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "sysadmin",
+      "version": "1.0.0",
+      "label": "Administrateur système",
+      "icon": "🖥️",
+      "suggestedName": "Sysadmin",
+      "description": "Entretien de la machine, sauvegardes et diagnostics.",
+      "highlights": [
+        "Diagnostique la machine",
+        "Prépare les mises à jour",
+        "Surveille disques et services"
+      ],
+      "missions": [
+        "Diagnostiquer un problème système à partir des journaux et de l'état des services.",
+        "Préparer les mises à jour : ce qui change, ce qui redémarre, ce qui peut casser.",
+        "Surveiller l'espace disque, la mémoire et les services qui doivent tourner.",
+        "Vérifier que les sauvegardes existent et sont récentes.",
+        "Traiter les demandes système que les autres agents te délèguent, sans jamais dépasser ce qu'elles demandent."
+      ],
+      "defaultRights": {
+        "canAdminSystem": true
+      },
+      "keywords": [
+        "système",
+        "administration",
+        "serveur",
+        "maintenance"
+      ],
+      "author": {
+        "name": "Allkin",
+        "url": "https://github.com/ctrlmakeit/allkin"
+      },
+      "license": "MIT",
+      "path": "modeles/sysadmin"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "veille",
+      "version": "1.0.0",
+      "label": "Veille & recherche",
+      "icon": "🔎",
+      "suggestedName": "Veille",
+      "description": "Recherche documentaire, synthèses et suivi de sujets.",
+      "highlights": [
+        "Cherche et recoupe",
+        "Rédige des synthèses",
+        "Suit un sujet dans la durée"
+      ],
+      "missions": [
+        "Rechercher sur un sujet donné et recouper les sources avant de conclure.",
+        "Produire des synthèses courtes, hiérarchisées, avec les sources en fin de note.",
+        "Suivre un sujet dans la durée et signaler ce qui a changé depuis la dernière note.",
+        "Archiver les notes dans `data/` pour qu'elles restent consultables."
+      ],
+      "defaultRights": {},
+      "keywords": [
+        "recherche",
+        "veille",
+        "synthèse",
+        "documentation"
+      ],
+      "author": {
+        "name": "Allkin",
+        "url": "https://github.com/ctrlmakeit/allkin"
+      },
+      "license": "MIT",
+      "path": "modeles/veille"
+    }
+  ]
+}

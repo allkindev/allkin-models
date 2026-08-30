@@ -1,0 +1,18 @@
+name: Vérification des modèles
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  catalogue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      # Valide chaque modele.json et vérifie que catalogue.json a bien été
+      # régénéré : sans ça, un modèle mergé resterait invisible depuis Allkin.
+      - run: node scripts/catalogue.mjs --check

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "veille",
+  "version": "1.0.0",
+  "label": "Veille & recherche",
+  "icon": "🔎",
+  "suggestedName": "Veille",
+  "description": "Recherche documentaire, synthèses et suivi de sujets.",
+  "highlights": [
+    "Cherche et recoupe",
+    "Rédige des synthèses",
+    "Suit un sujet dans la durée"
+  ],
+  "missions": [
+    "Rechercher sur un sujet donné et recouper les sources avant de conclure.",
+    "Produire des synthèses courtes, hiérarchisées, avec les sources en fin de note.",
+    "Suivre un sujet dans la durée et signaler ce qui a changé depuis la dernière note.",
+    "Archiver les notes dans `data/` pour qu'elles restent consultables."
+  ],
+  "defaultRights": {},
+  "keywords": [
+    "recherche",
+    "veille",
+    "synthèse",
+    "documentation"
+  ],
+  "author": {
+    "name": "Allkin",
+    "url": "https://github.com/ctrlmakeit/allkin"
+  },
+  "license": "MIT"
+}

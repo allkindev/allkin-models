@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ctrlmakeit/allkin-models/blob/main/schema/modele.schema.json",
+  "title": "Modèle d'agent Allkin",
+  "description": "Décrit un modèle d'agent : son métier, ses missions, les droits qu'il propose. Le prompt lui-même vit dans le CLAUDE.md voisin, jamais ici.",
+  "type": "object",
+  "required": ["schemaVersion", "id", "version", "label", "icon", "description", "highlights", "missions"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "description": "Version du format. Vaut 1 aujourd'hui ; Allkin refuse ce qu'il ne sait pas lire.",
+      "const": 1
+    },
+    "id": {
+      "description": "Identifiant du modèle, identique au nom de son dossier. Minuscules, chiffres et tirets.",
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?$"
+    },
+    "version": {
+      "description": "Version du modèle, en semver. À incrémenter à chaque changement du CLAUDE.md ou des missions.",
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "label": {
+      "description": "Le métier, tel qu'il s'affiche sur la carte. Deux à trois mots.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "icon": {
+      "description": "Un emoji, et un seul : l'interface n'a pas d'icônes dédiées par métier.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 8
+    },
+    "suggestedName": {
+      "description": "Nom d'agent proposé par défaut à la création. Vide = l'utilisateur choisit tout.",
+      "type": "string",
+      "maxLength": 60
+    },
+    "description": {
+      "description": "Une phrase : à quoi sert cet agent. Sert de résumé de carte et de description par défaut.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "highlights": {
+      "description": "Deux à quatre exemples concrets de ce que l'agent saura faire. Des faits, pas des promesses.",
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4,
+      "items": { "type": "string", "minLength": 1, "maxLength": 80 }
+    },
+    "missions": {
+      "description": "Les missions du métier. Reprises telles quelles dans le CLAUDE.md et dans le bloc « Périmètre » du prompt système.",
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "items": { "type": "string", "minLength": 1, "maxLength": 300 }
+    },
+    "defaultRights": {
+      "description": "Droits PRÉ-COCHÉS à la création — une proposition, jamais une décision : l'utilisateur voit et modifie l'étape « Droits ». N'y mets que ce dont le métier a réellement besoin.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canReadSystem": {
+          "description": "Consulter l'état de la machine, en lecture seule.",
+          "type": "boolean"
+        },
+        "canAdminSystem": {
+          "description": "Exécuter des commandes (chacune validée par l'utilisateur). Implique la lecture.",
+          "type": "boolean"
+        }
+      }
+    },
+    "keywords": {
+      "description": "Mots-clés de recherche dans la galerie.",
+      "type": "array",
+      "maxItems": 12,
+      "items": { "type": "string", "minLength": 1, "maxLength": 40 }
+    },
+    "author": {
+      "description": "Qui maintient ce modèle.",
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "url": { "type": "string", "format": "uri", "maxLength": 300 }
+      }
+    },
+    "license": {
+      "description": "Licence du modèle. MIT par défaut dans ce dépôt.",
+      "type": "string",
+      "maxLength": 60
+    }
+  }
+}
