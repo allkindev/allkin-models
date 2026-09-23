@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/ctrlmakeit/allkin-models/blob/main/schema/modele.schema.json",
+  "$id": "https://github.com/allkindev/allkin-models/blob/main/schema/modele.schema.json",
   "title": "Modèle d'agent Allkin",
   "description": "Décrit un modèle d'agent : son métier, ses missions, les droits qu'il propose. Le prompt lui-même vit dans le CLAUDE.md voisin, jamais ici.",
   "type": "object",

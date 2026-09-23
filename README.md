@@ -1,6 +1,6 @@
 # allkin-models
 
-Les **modèles d'agent** d'[Allkin](https://github.com/ctrlmakeit/allkin).
+Les **modèles d'agent** d'[Allkin](https://github.com/allkindev/allkin).
 
 Un modèle est un métier prêt à l'emploi : un rôle déjà écrit, des missions, un ton, et les
 droits que ce métier réclame. Depuis Allkin, `+` → **Parcourir les modèles** lit ce dépôt
@@ -41,7 +41,7 @@ modeles/secretaire/
   ],
   "defaultRights": {},             // droits PRÉ-COCHÉS, jamais accordés d'office
   "keywords": ["bureau", "administratif"],
-  "author": { "name": "Allkin", "url": "https://github.com/ctrlmakeit/allkin" },
+  "author": { "name": "Allkin", "url": "https://github.com/allkindev/allkin" },
   "license": "MIT"
 }
 ```

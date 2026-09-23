@@ -29,7 +29,7 @@
       ],
       "author": {
         "name": "Allkin",
-        "url": "https://github.com/ctrlmakeit/allkin"
+        "url": "https://github.com/allkindev/allkin"
       },
       "license": "MIT",
       "path": "modeles/comptable"
@@ -62,7 +62,7 @@
       ],
       "author": {
         "name": "Allkin",
-        "url": "https://github.com/ctrlmakeit/allkin"
+        "url": "https://github.com/allkindev/allkin"
       },
       "license": "MIT",
       "path": "modeles/cuisinier"
@@ -97,7 +97,7 @@
       ],
       "author": {
         "name": "Allkin",
-        "url": "https://github.com/ctrlmakeit/allkin"
+        "url": "https://github.com/allkindev/allkin"
       },
       "license": "MIT",
       "path": "modeles/developpeur"
@@ -130,7 +130,7 @@
       ],
       "author": {
         "name": "Allkin",
-        "url": "https://github.com/ctrlmakeit/allkin"
+        "url": "https://github.com/allkindev/allkin"
       },
       "license": "MIT",
       "path": "modeles/redacteur"
@@ -163,7 +163,7 @@
       ],
       "author": {
         "name": "Allkin",
-        "url": "https://github.com/ctrlmakeit/allkin"
+        "url": "https://github.com/allkindev/allkin"
       },
       "license": "MIT",
       "path": "modeles/secretaire"
@@ -196,7 +196,7 @@
       ],
       "author": {
         "name": "Allkin",
-        "url": "https://github.com/ctrlmakeit/allkin"
+        "url": "https://github.com/allkindev/allkin"
       },
       "license": "MIT",
       "path": "modeles/support"
@@ -232,7 +232,7 @@
       ],
       "author": {
         "name": "Allkin",
-        "url": "https://github.com/ctrlmakeit/allkin"
+        "url": "https://github.com/allkindev/allkin"
       },
       "license": "MIT",
       "path": "modeles/sysadmin"
@@ -265,7 +265,7 @@
       ],
       "author": {
         "name": "Allkin",
-        "url": "https://github.com/ctrlmakeit/allkin"
+        "url": "https://github.com/allkindev/allkin"
       },
       "license": "MIT",
       "path": "modeles/veille"
